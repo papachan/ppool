@@ -10,12 +10,6 @@ start(normal, _Args) ->
     ppool_supersup:start_link().
 
 stop(_State) ->
-    ok.
-
-start_link() ->
-    ppool_supersup:start_link().
-
-stop() ->
     ppool_supersup:stop().
 
 start_pool(Name, Limit, {M,F,A}) ->
